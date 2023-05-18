@@ -1,0 +1,430 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  font-family: sans-serif;
+}
+
+.sign-in-posting {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 20px;
+}
+.signin {
+  padding: 5px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+.sign {
+  background: #3b3386;
+  color: white;
+  border: none;
+}
+.posting {
+  border: 1.4px solid #3b3386;
+  color: #3b3386;
+}
+.container {
+  justify-content: center;
+  /* border: 2px solid red; */
+  background: #f6f6f6;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+.rent-it-btn {
+  padding: 8px 20px;
+  background-color: #3b3386;
+  border: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: center;
+}
+.line {
+  border-top: 2px solid black;
+  width: 15px;
+  height: 5px;
+}
+.discover-text h1 {
+  font-family: Sora;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 60px;
+  text-align: center;
+  color: #3b3386;
+  margin-top: 50px;
+}
+.discover-text p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #636363;
+  letter-spacing: 0px;
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: -4px 0px 20px rgba(19, 20, 32, 0.16);
+  border-radius: 16px;
+  margin-top: 50px;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.select-input {
+  width: 90%;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #e8e8e8;
+}
+.label {
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: left;
+  color: #1f2b65;
+  padding-left: 35px;
+  padding-bottom: 8px;
+}
+.img {
+  width: 20px;
+  position: relative;
+  bottom: -28px;
+  left: 10px;
+}
+.map {
+  width: 25px;
+  background: #f7f7f7;
+  left: 8px;
+  bottom: -32px;
+}
+.inner {
+  width: 10px;
+  position: absolute;
+  bottom: -195px;
+  left: 22.5px;
+}
+.search-btn {
+  width: 70px;
+
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #3b3386;
+  color: #e8e8e8;
+  position: relative;
+  top: -65px;
+  left: 190px;
+}
+.house {
+  width: 100%;
+  margin: 0 auto;
+}
+.house-con p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #554e3b;
+}
+.brand-icons {
+  width: 50px;
+}
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.house-con {
+  text-align: center;
+}
+.house-con h3 {
+  color: #3b3386;
+  font-size: 11px;
+  text-align: center;
+  line-height: 50px;
+}
+.class-list li {
+  margin: 50px 40px;
+  height: 40px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: 2px solid gray;
+  color: #636363;
+  list-style: disc;
+}
+.featuredprops {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+}
+.featuredprops h3 {
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #807458;
+}
+.we-provide-you {
+  font-family: Sora;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.featuredprops .affordable {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  background: linear-gradient(101.42deg, #082eeb 1.96%, #080337 19.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+  background: gray;
+  color: #f6f6f6;
+  border-radius: 5px;
+}
+.section-house {
+  color: #082eeb;
+  font-weight: bold;
+  border-right: 2px solid black;
+  padding-right: 15px;
+}
+.section-apartment {
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+.third-house {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 300px;
+  height: 520px;
+  left: 2px;
+  margin: 60px 0px;
+  background: url(./MidSection/house3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.third-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 8px;
+  gap: 15px;
+
+  position: relative;
+  width: 289px;
+  height: 205px;
+  left: 5px;
+  top: 280px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+.third-house span {
+  display: flex;
+}
+.paragraph {
+  display: flex;
+  gap: 20px;
+}
+.verified {
+  color: #27ae60;
+  margin-right: 12px;
+  margin-top: 4px;
+}
+.checkout {
+  height: 18px;
+  margin-top: 4px;
+}
+.grand-price {
+  color: #27ae60;
+  font-size: 24px;
+  font-weight: 800;
+}
+.third-house-text {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  text-align: left;
+  margin: 10px;
+  color: #636363;
+  line-height: 26px;
+}
+.coming-soon {
+  margin: 30px auto;
+  text-align: start;
+  align-items: center;
+  width: 80%;
+  font-weight: 400;
+  font-size: 14px;
+  height: 40px;
+  background: #f1f1f1;
+  color: #000;
+  display: flex;
+  border-radius: 5px;
+}
+.coming-soon p {
+  font-family: "Sora";
+  font-size: 10px;
+  text-align: start;
+  margin: 0 7px;
+}
+.coming-p {
+  background: #ffeead;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 300;
+  border-radius: 4px;
+}
+.local-area-view {
+  text-align: center;
+  color: #14112d;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 20px 0px;
+}
+.welcome-note {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  color: #636363;
+  margin: 20px 0px;
+}
+.vectormap{
+  background: #FFFBEF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.data-title{
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.data-content{
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 18px;
+list-style: none;
+color: #FFFFFF;
+}
+.footerDataList{
+  background: #3B3386;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  gap: 40px;
+}
+.footer-line{
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+
+.facebook{
+  background-color: #1877F2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.linkedin{
+  background-color: #1877F2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.instagram{
+  background-color: #F00073;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+ 
+  .third-house {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.modal-container{
+  width: 100%;
+  display: flex;
+  margin: 0px auto;
+}
+.coming-soon {
+  width: 90%;
+  display: flex;
+  margin: 0px auto;
+  padding: 30px 0px;
+ 
+}
+}
