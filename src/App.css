@@ -7,6 +7,9 @@ body {
   background: white;
   font-family: sans-serif;
 }
+button:hover{
+    cursor: pointer;
+}
 
 .sign-in-posting {
   display: flex;
@@ -133,7 +136,6 @@ body {
 }
 .search-btn {
   width: 70px;
-
   font-size: 16px;
   line-height: 20px;
   padding: 5px 10px;
@@ -142,8 +144,11 @@ body {
   background: #3b3386;
   color: #e8e8e8;
   position: relative;
-  top: -65px;
-  left: 190px;
+  top: -50px;
+  left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: self-end;
 }
 .house {
   width: 100%;
@@ -427,4 +432,7 @@ color: #FFFFFF;
   padding: 30px 0px;
  
 }
+}
+@media (max-width: 500px) {
+
 }
