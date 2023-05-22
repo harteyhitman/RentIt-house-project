@@ -25,7 +25,6 @@ const PriceTagModal = () => {
     <InputField   label="Price Range" value={location} onChange={handleLocationChange} /> 
     <img className='img map' src={image2} alt="" />
       <InputField label="Location" value={priceRange} onChange={handlePriceRangeChange} />
-      
     </div>
   )
 }

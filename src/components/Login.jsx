@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
-import Button from './Button'
+import React, { useState } from "react";
+import Button from "./Button";
+import SignInModal from "./SignInModal";
 
 const Login = () => {
-    const [Button1, setButton] = useState('')
-
-    const handleClick = () => {
-        setButton(Button1);
-      };
+  const [openModal, setopenModal] = useState(false);
+ 
 
   return (
-    <div className='sign-in-posting'>
-    <Button onClick={handleClick} className="signin sign" label="Log In"/>
-    <Button onClick={handleClick} className="signin posting" label="Make a posting"/>
+    <div>
+      <div className="sign-in-posting">
+        <Button onClick={()=>{setopenModal(true)}} className="signin sign" label="Log In" />
+        <Button
+        onClick={()=>{setopenModal(true)}}
+          className="signin posting"
+          label="Make a posting"
+        />
+      </div>
+      {openModal && <SignInModal closeModal={setopenModal}/>}
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

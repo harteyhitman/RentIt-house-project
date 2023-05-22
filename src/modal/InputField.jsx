@@ -7,7 +7,7 @@ function InputField(props) {
   return (
     <div className="input-field">
       <label className="label">{label}</label>
-      <select type="text" value={value} onChange={onChange} className="select-input"/>
+      <select type="range" value={value} onChange={onChange} className="select-input"/>
     </div>
   );
 }

@@ -23,6 +23,7 @@ const App = () => {
       <div className="container">
         <div className="menu">
           <RentItButton />
+          
           <HambuggerMenu />
         </div>
         <DiscoverAndText />
@@ -35,6 +36,7 @@ const App = () => {
       <ThirdHouseText/>
       <FourthHouse/>
       <FooterDesign/>
+      
     </div>
   );
 };
