@@ -13,31 +13,38 @@ import ThirdHouse from "./MidSection/ThirdHouse";
 import ThirdHouseText from "./MidSection/ThirdHouseText";
 import FourthHouse from "./MidSection/FourthHouse";
 import FooterDesign from "./footer/FooterDesign";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Auth from "./Auth";
 
 const App = () => {
   return (
-    <div className="App">
-      <div>
-        <Login />
-      </div>
-      <div className="container">
-        <div className="menu">
-          <RentItButton />
-          
-          <HambuggerMenu />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="auth" element={<Auth />} />
+        <Route path="rentBtn" element={<RentItButton />} />
+      </Routes>
+      <div className="App">
+        <div></div>
+        <div className="container">
+          <div className="menu">
+            <Link to="auth">
+              <RentItButton />
+            </Link>
+            <HambuggerMenu />
+          </div>
+          <DiscoverAndText />
+          <PriceTagModal />
+          <SearchModal />
+          <FirstHouse />
+          <SecondHouse />
+          <ThirdHouse />
         </div>
-        <DiscoverAndText />
-        <PriceTagModal />
-        <SearchModal />
-        <FirstHouse />
-        <SecondHouse />
-        <ThirdHouse />
+        <ThirdHouseText />
+        <FourthHouse />
+        <FooterDesign />
       </div>
-      <ThirdHouseText/>
-      <FourthHouse/>
-      <FooterDesign/>
-      
-    </div>
+    </BrowserRouter>
   );
 };
 

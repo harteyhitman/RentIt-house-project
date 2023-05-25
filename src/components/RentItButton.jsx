@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
+
 const RentItButton = () => {
 
     const handleClick = () => {
@@ -8,7 +9,7 @@ const RentItButton = () => {
       };
   return (
     <div>
-    <Button onClick={handleClick} className="rent-it-btn" label="Rent it"/>
+   <Button onClick={handleClick} className="rent-it-btn" label="Rent it"/>
     </div>
   )
 }
