@@ -3,7 +3,6 @@ import {getAuth} from 'firebase/auth'
 import { GoogleAuthProvider} from 'firebase/auth'
 
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyDUwjjXBMic4GuYHKcl_XJlswdCa4qhRxM",
   authDomain: "rent-it-554be.firebaseapp.com",

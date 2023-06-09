@@ -12,7 +12,7 @@ const Auth = () => {
   const [password, setPassword] = useState("");
 
 
-  console.log(auth?.currentUser?.email)
+
 
   const signIn = async (e) => {
     try {
@@ -39,14 +39,11 @@ const Auth = () => {
     }
   };
 
-  const handleChange = () =>{
-    setEmail('')
-    setPassword('')
-  }
+
 
 
   return (
-    <form onChange={handleChange}>
+    <form >
     <div className="login-form">
       <input
         className="auth-input"
@@ -61,7 +58,7 @@ const Auth = () => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <button className="auth-btn signin" onChange={handleChange}  onClick={signIn}> Sign In</button>
+      <button className="auth-btn signin" onClick={signIn}> Sign In</button>
       <button className="auth-btn signin with google" onClick={signInWithGoogle}><img className="google" src={google} alt="" /> Sign In With Google</button>
       <button className="auth-btn logout" onClick={logout}> Logout </button>
     </div>
