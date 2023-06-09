@@ -29,8 +29,8 @@ const SignInModal = ({closeModal}) => {
     <div className='sign-in-modal'>
       <div className="modal-container sign-in">
         <form type='submit' onSubmit={handleSubmit}>
-          <input type="email"  placeholder='email......' value={email} onChange={handleEmailChange}/>
-          <input type="password" placeholder='password......' value={password} onChange={handlePasswordChange}/> <br />
+          <input className='signin-modal-input' type="email"  placeholder='email......' value={email} onChange={handleEmailChange}/>
+          <input className='signin-modal-input' type="password" placeholder='password......' value={password} onChange={handlePasswordChange}/> <br />
           <Button type='submit' className='sign-in-modal-button'  label="LogIn" onClick={()=> closeModal(false)}/>
         </form>
       </div>

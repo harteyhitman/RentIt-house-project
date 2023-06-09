@@ -5,6 +5,7 @@ import {
   signOut
 } from "firebase/auth";
 import { useState } from "react";
+import google from './google.png'
 
 const Auth = () => {
   const [email, setEmail] = useState("");
@@ -13,9 +14,10 @@ const Auth = () => {
 
   console.log(auth?.currentUser?.email)
 
-  const signIn = async () => {
+  const signIn = async (e) => {
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      e.preventDefault();
+      await createUserWithEmailAndPassword(auth, email, password); 
     } catch (err) {
       console.error(err);
     }
@@ -37,24 +39,36 @@ const Auth = () => {
     }
   };
 
+  const handleChange = () =>{
+    setEmail('')
+    setPassword('')
+  }
+
+
   return (
-    <div>
+    <form onChange={handleChange}>
+    <div className="login-form">
       <input
+        className="auth-input"
         placeholder="Email..."
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value) }
+        value={email}
       />
       <input
+        className="auth-input"
         placeholder="Password..."
         type="password"
         onChange={(e) => setPassword(e.target.value)}
+        value={password}
       />
-      <button onClick={signIn}> Sign In</button>
-
-      <button onClick={signInWithGoogle}> Sign In With Google</button>
-
-      <button onClick={logout}> Logout </button>
+      <button className="auth-btn signin" onChange={handleChange}  onClick={signIn}> Sign In</button>
+      <button className="auth-btn signin with google" onClick={signInWithGoogle}><img className="google" src={google} alt="" /> Sign In With Google</button>
+      <button className="auth-btn logout" onClick={logout}> Logout </button>
     </div>
+    </form>
   );
 };
 
 export default Auth
+
+
