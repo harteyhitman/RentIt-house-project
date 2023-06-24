@@ -43,7 +43,7 @@ const Auth = () => {
 
 
   return (
-    <form >
+    <form  onSubmit={signIn}>
     <div className="login-form">
       <input
         className="auth-input"
@@ -58,7 +58,7 @@ const Auth = () => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <button className="auth-btn signin" onClick={signIn}> Sign In</button>
+      <button className="auth-btn signin" type="submit" onClick={signIn}> Sign In</button>
       <button className="auth-btn signin with google" onClick={signInWithGoogle}><img className="google" src={google} alt="" /> Sign In With Google</button>
       <button className="auth-btn logout" onClick={logout}> Logout </button>
     </div>
